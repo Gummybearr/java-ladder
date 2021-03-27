@@ -1,5 +1,6 @@
 package ladder.service;
 
+import ladder.domain.Ladder;
 import ladder.domain.ParticipantList;
 
 import java.util.List;
@@ -12,4 +13,8 @@ public class LadderService {
     }
 
 
+    public int verifiedMaximumLadderHeight(int maximumLadderHeight) {
+        Ladder ladder = new Ladder(maximumLadderHeight);
+        return ladder.height();
+    }
 }
